@@ -1,0 +1,7 @@
+version: 1.0
+
+tls:
+  enabled: false
+
+client:
+  insecure_skip_verify: true

@@ -1,0 +1,7 @@
+.git
+.gitignore
+.DS_Store
+configaudit
+coverage.out
+coverage_full.out
+Dockerfile.*

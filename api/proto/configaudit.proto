@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package configaudit.v1;
+
+option go_package = "configaudit/api/proto;configauditpb";
+
+service ConfigAudit {
+  rpc Scan(ScanRequest) returns (ScanResponse);
+}
+
+message ScanRequest {
+  string content = 1;
+  string format = 2;
+}
+
+message ScanResponse {
+  repeated Problem problems = 1;
+}
+
+message Problem {
+  string severity = 1;
+  string path = 2;
+  string message = 3;
+  string recommendation = 4;
+}

@@ -1,0 +1,6 @@
+/configaudit
+*.exe
+*.log
+coverage.out
+tmp/
+.DS_Store
